@@ -1,0 +1,152 @@
+body {
+    background: #F8F8F8;
+    // padding: 24px;
+    // border: 5px solid #333;
+}
+
+.sec_video {
+    margin: 0 auto;
+    max-width: 50%;
+    margin-bottom: 24px;
+
+    p {
+        font-family: $regular-font;
+        margin-bottom: x;
+    }
+}
+
+
+.youtube_video_grp {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 50px;
+    height: 315px;
+    min-height: 250px;
+}
+
+.youtube_video_grp iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.overlap_content_desc {
+    label {
+        font-family: $light-font;
+    }
+}
+
+.prodcut_main {
+    background-color: #fff;
+}
+
+.product_main_card {
+    display: flex;
+    background-color: #FFF;
+    align-items: center;
+    gap: 16px;
+
+    .product_img {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+
+        img {
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+
+    .product_desc {
+        flex: 1;
+    }
+}
+
+.new_map {
+
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+        width: 50%;
+    }
+}
+
+.pack_details_new {
+    display: flex;
+    gap: 32px;
+
+    img {
+        width: 50% !important;
+        height: 50% !important;
+    }
+}
+
+
+.ftth-payment-channel-info-comp {
+    .ioh_h2 {
+        font-size: 30px;
+    }
+
+    .ioh_tab .nav .nav-item .nav-link.active {
+        color: $magenta;
+    }
+
+    .faqs-compo-list .card .card-header .card-link {
+        font-family: $primary-font;
+        color: $magenta;
+        font-weight: 400 !important;
+    }
+
+    .ioh_tab .nav .nav-item .nav-link {
+        padding: 8px 10px;
+    }
+
+    .pad-lef-40 {
+        padding-left: 20px;
+    }
+}
+
+
+// css for progress bar start
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .new_map {
+        img {
+            width: 100%;
+        }
+    }
+    .product_main_card {
+        flex-direction: column;
+        .product_desc {
+            // margin-top: 24px;
+            border: 0px;
+        }
+    }
+    .sec_video {
+        max-width: 100%;
+    }
+    .youtube_video_grp {
+        margin-left: 0px;
+    }
+}
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    
+
+}
