@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>FTTH-HIFI-Air</title>
   <link href="assests/css/imports/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="assests/css/imports/vendors/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="assests/css/imports/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
 
   <link href="assests/css/custom.css" rel="stylesheet">
   <style>
@@ -36,6 +36,7 @@
 </head>
 
 <body>
+
   <!-- header start -->
   <header class="header_mainmenu navbar-expand-lg">
     <div class="top_header">
@@ -123,7 +124,6 @@
   </header>
   <!-- header end -->
 
-
   <main class="ioh_main">
 
     <!-- hero banner start -->
@@ -165,7 +165,9 @@
       <div class="swiper-pagination"></div>
     </section>
     <!-- hero banner end -->
-    <section>
+
+    <!-- Solusi Tanpa start -->
+    <section class="white_light_bg">
       <div class="container text-center pt-5 pb-5">
         <div class="sec_video">
           <div>
@@ -187,6 +189,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Keunggulan start -->
     <section class="prodcut_main pt-5 pb-5">
       <div class="container text-align ">
         <div class="product_main_card">
@@ -214,10 +218,10 @@
         </div>
       </div>
     </section>
+
      <!-- swiper start -->
-     <section class="mt-5 mb-5">
-      <div>
-        <div class="swiper mySwiper">
+     <section class="py_75 white_light_bg product-swiper-comp">
+        <div class="swiper mySwiper global_hero_banner swiper-height">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="pack_details_new">
@@ -243,14 +247,12 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-      </div>
     </section>
+
     <!-- progress bar start -->
-    <section class="white_light_bg py_75 newconnect-comp">
+    <section class="white_light_bg py_75 newconnect-comp primary_bg">
       <div class="container">
         <h3 class="ioh_h1">
           How to get new connection
@@ -259,34 +261,37 @@
           <!--div class="lh-1"></div-->
           <div class="row connection-border">
             <div class="col resd-flex">
-              <img src="assests/images/img/setting-icon.svg" class="card-img-top" alt="registration-icon"
-                title="registration-icon" loading="lazy">
-
-              <div>
+                <div class="number-col">
+                    <h2>1</h2>
+                </div>
+              <div class="ms-2">
                 <h3 class="ioh_h3"> 1. Registration </h3>
                 <p class="mt-2"> Check Availability, Subscription Type, Scheduled Installation, Payment Process. </p>
               </div>
             </div>
             <div class="col resd-flex">
-              <img src="assests/images/img/1.png" class="card-img-top" alt="payment-icon"
-                title="payment-icon">
-              <div>
+                <div class="number-col">
+                    <h2>2</h2>
+                </div>
+              <div class="ms-2">
                 <h3 class="ioh_h3">2. Payment</h3>
                 <p class="mt-2"> Pay Deposite Fee, Waiting for Installation. </p>
               </div>
             </div>
             <div class="col resd-flex">
-              <img src="assests/images/img/setting-icon.svg" class="card-img-top" alt="setting-icon"
-                title="setting-icon">
-              <div>
+                <div class="number-col">
+                    <h2>3</h2>
+                </div>
+              <div class="ms-2">
                 <h3 class="ioh_h3">3. Installation</h3>
                 <p class="mt-2"> Track Installation Process, Pay Due Amount and Enjoy Hifi Service. </p>
               </div>
             </div>
             <div class="col resd-flex">
-              <img src="assests/images/img/setting-icon.svg" class="card-img-top" alt="setting-icon"
-                title="setting-icon">
-              <div>
+                <div class="number-col">
+                    <h2>4</h2>
+                </div>
+              <div class="ms-2">
                 <h3 class="ioh_h3">4. Installation</h3>
                 <p class="mt-2"> Track Installation Process, Pay Due Amount and Enjoy Hifi Service. </p>
               </div>
@@ -295,24 +300,25 @@
         </div>
 
       </div>
-    </section><!--How to get new connection-->
-    <!-- prgress bar end -->
+    </section>
+    <!--How to get new connection-->
+
     <!-- map start -->
     <section class="pt-5 pb-5">
       <div class="container ">
         <div class="row new_map">
           <div class="col-sm-12">
             <h3 class="ioh_h1 mb-4">Keunggulan</h3>
-            <img src="assests/images/img/map.jpg" alt="map">
+            <div>
+            <img src="assests/images/img/map.PNG" alt="map">
+        </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- map end -->
-
    
     <!-- faq start -->
-    <section class="faq_component py_75">
+    <section class="faq_component py_75 white_bg">
       <div class="container">
         <h3 class="text-center ioh_h1">Frequently Asked Question</h3>
         <div class="faqs-compo-list faqs-read-more">
@@ -442,22 +448,20 @@
             </div>
           </div>
         </div><!--faqs-compo-list-->
-        <div class="text-center">
+        <!-- <div class="text-center">
           <a href="faq.html" class="ioh_btn ioh_btn_primary faq-seemore-btn">SEE ALL</a>
-        </div>
+        </div> -->
       </div>
-    </section><!--top_bottom_borders-->
-    <!-- faq end -->
+    </section>
+
   </main>
-
-
 
   <!-- scripts start -->
   <script src="assests/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assests/js/swiper/swiper-bundle.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assests/js/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
 
-  <!-- <script src="assests/js/custom.js"></script> -->
+  <script src="assests/js/custom.js"></script>
 
   <script>
     var swiper = new Swiper(".mySwiper", {
